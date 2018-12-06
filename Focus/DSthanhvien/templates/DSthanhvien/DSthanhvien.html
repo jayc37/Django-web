@@ -1,0 +1,9 @@
+{%extends "DSthanhvien/DSthanhvien.html"%}
+
+{%block title %}Dsthanhvien{% endblock %}
+
+{%block content %}
+{%for Danhsach in Danhsachs%}
+<h4>{{Danhsach.Name}} <a href ="/DSthanhvien/{{DSthanhvien.id}}">{{Danhsach.Name}}</a></h4>
+{%endfor%}
+{%endblock%}
